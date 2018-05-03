@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         int screenHeight = canvas.getHeight();
         int targetY = screenHeight - imageView.getHeight();
         ObjectAnimator animator = ObjectAnimator.ofFloat(
-                imageView, "y", 0, targetY)
+                imageView, "y", 800, targetY)
                 .setDuration(4000);
-        animator.setInterpolator(new CycleInterpolator(5));
+        animator.setInterpolator(new CycleInterpolator(4));
         animator.start();
     }
 
